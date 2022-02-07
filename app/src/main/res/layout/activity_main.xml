@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F4D4"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_id1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/sms1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card_id1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_below="@+id/image_id1">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/text_id1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send Sms!"
+                        android:textColor="#599127"
+                        android:textStyle="bold"
+                        android:textSize="35sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp" />
+                    <EditText
+                        android:id="@+id/Mobile_No_id1"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:padding="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/text_id1"
+                        android:drawableLeft="@drawable/phone_icon"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/cartback"
+                        android:hint="Enter Mobile Number" />
+
+                    <EditText
+                        android:id="@+id/Sms_id1"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:padding="5dp"
+                        android:layout_below="@+id/Mobile_No_id1"
+                        android:layout_marginTop="20dp"
+                        android:hint="Enter Sms"
+                        android:drawableLeft="@drawable/sms_icon"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/cartback"
+                        android:layout_marginBottom="10dp"/>
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/send_button_id1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_below="@id/card_id1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:backgroundTint="#599127"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>
